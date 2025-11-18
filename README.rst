@@ -1,5 +1,5 @@
 ============================
-Atlassian Python API wrapper
+Atlassian Python API wrapper - Claudiu Tomescu
 ============================
 |Build Status| |PyPI version| |PyPI - Downloads| |License| |Codacy Badge| |Docs| |Discord|
 

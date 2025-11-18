@@ -6,9 +6,10 @@
 from requests_oauthlib import OAuth2Session
 from atlassian.bitbucket import Cloud
 from flask import Flask, request, redirect, session
+import os
 
 app = Flask(__name__)
-app.secret_key = ""
+app.secret_key = os.environ["SECRET_KEY"]
 
 # Bitbucket OAuth URLs
 authorization_base_url = "https://bitbucket.org/site/oauth2/authorize"

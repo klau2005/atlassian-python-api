@@ -8,9 +8,10 @@ from requests_oauthlib import OAuth2Session
 from atlassian.jira import Jira
 from flask import Flask, request, redirect, session
 import requests
+import os
 
 app = Flask(__name__)
-app.secret_key = ""
+app.secret_key = os.environ["SECRET_KEY"]
 
 # JIRA OAuth URLs
 authorization_base_url = "https://auth.atlassian.com/authorize"

@@ -92,7 +92,7 @@ class TestConfluenceAttach(unittest.TestCase):
         fd, filename = tempfile.mkstemp("w")
         os.write(fd, b"Hello World - Version 1")
 
-        name = os.path.basename(tempfile.mktemp()) + ".txt"
+        name = os.path.basename(tempfile.NamedTemporaryFile()) + ".txt"
 
         # upload a new file
         result = confluence.attach_file(

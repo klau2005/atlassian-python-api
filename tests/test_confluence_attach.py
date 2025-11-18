@@ -148,7 +148,7 @@ class TestConfluenceAttach(unittest.TestCase):
         space = "SAN"
         title = "atlassian-python-rest-api-wrapper"
 
-        attachment_name = os.path.basename(tempfile.mktemp())
+        attachment_name = os.path.basename(tempfile.NamedTemporaryFile())
 
         # upload a new file
         content = b"Hello World - Version 1"
